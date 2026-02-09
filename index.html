@@ -8,6 +8,7 @@
             margin: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
@@ -22,19 +23,56 @@
 
         h1 {
             font-size: clamp(1.5rem, 3vw, 2.5rem);
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         p {
-            font-size: 1rem;
-            line-height: 1.5;
+            font-size: 1.4rem;
+            line-height: 1.7;
+            margin-bottom: 3rem;
         }
 
-        a {
+        .clickable {
             color: inherit;
             text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+        }
+
+        footer a {
+            font-size: 1.35rem;
+            color: rgb(230, 230, 230);
+            text-decoration: none;
         }
     </style>
+</head>
+<body>
+    <main>
+        <h1>
+            youre probably wondering what kinda
+            <span class="clickable" onclick="window.location='https://tropiauhh.github.io/heynerds/button'">ip logger</span>
+            you just clicked,
+            but this is just a readme page, theres literally
+            <span class="clickable" onclick="window.location='https://tropiauhh.github.io/heynerds/something'">nothing</span>
+            else here
+        </h1>
+
+        <p>
+            just for your information, /heynerds is like the base for this page,
+            so if there was SUPPOSEDLY anything else here, it would be more like
+            /heynerds/blablablabla
+        </p>
+    </main>
+
+    <footer>
+        <a href="https://youtu.be/Yi5lL9Bq0SA?si=Fw0i0W3jEHBRqEHY">v1</a>
+    </footer>
+</body>
+</html>    </style>
 </head>
 <body>
     <main>
